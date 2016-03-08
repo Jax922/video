@@ -11,7 +11,12 @@ module.exports = function(app){
       {text: '开心一刻', route: 'happlytime'},
       {text: '开心一刻', route: 'happlytime'},
       {text: '开心一刻', route: 'happlytime'}
-    ]
-    
+    ];
+    scope.$on('sideOpenToNav', function(event, data){
+      scope.isopen = data;
+    })
+    // this.isopen = true;
+    scope.isopen = false;
+
   }]);
 }

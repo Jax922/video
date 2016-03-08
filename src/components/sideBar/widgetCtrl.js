@@ -8,8 +8,15 @@ module.exports = function(app){
       restrict: 'E',
       templateUrl: './components/sideBar/widget.html',
       transclude: true,
-      controller: function(){
-        
+      scope: {
+        isopen: '='
+      },
+      link: function(scope, elem, attrs){
+        var sideSwitch = elem.find('i');
+        sideSwitch.bind('click', function(e){
+          scope.isopen = false;
+          scope.$apply();
+        })
       }
     }
   })

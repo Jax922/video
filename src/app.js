@@ -1,3 +1,5 @@
+var $ = jQuery = require('jquery');
+require('bootstrap');
 var angular = require('angular');
 require('angular-ui-router');
 
@@ -14,6 +16,7 @@ var app = angular.module('app', ['ui.router']);
 require('./components/flatButton/widget_flatButton.js')(app);
 require('./components/sideBar/widgetCtrl.js')(app);
 require('./components/menuGroup/widget_menuGroup.js')(app);
+require('./components/userHead/widget_userHead.js')(app);
 
 
 //******** router require

@@ -1,5 +1,6 @@
-<div class="side-bar">
-  <i class="glyphicon glyphicon-list side-switch" ng-click="sideHandle"></i>
+<div class="side-bar" ng-class="{true: 'side-open', false: 'side-close'}[isopen]">
+
+  <i class="glyphicon glyphicon-menu-left side-switch"></i>
   <span class="side-bar-title"> 视频分类 </span>
   <div ng-transclude>
     <!-- menu-group -->

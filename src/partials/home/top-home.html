@@ -1,3 +1,24 @@
 <div class="">
-  top-home
+  <i class="glyphicon glyphicon-align-justify side-open-switch" ng-click="vm.sideOpen()"></i>
+  <div class="right-top-home">
+    <form class="form-inline">
+      <div class="input-group search">
+        <input type="text" name="name" placeholder="请输入关键字" value="" class="form-control">
+        <div class="input-group-addon">
+            <i class="glyphicon glyphicon-search"></i>
+        </div>
+      </div>
+      <div class="input-group login" ng-if="vm.islogin">
+        <input type="button" name="login" value="登 录" class="btn btn-primary">
+        <input type="button" name="sign" value="注 册" class="btn">
+      </div>
+      <div class="input-group">
+        <ms-userhead user="vm.user"></ms-userhead>
+      </div>
+
+    </form>
+
+  </div>
+
+
 </div>

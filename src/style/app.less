@@ -13,13 +13,40 @@ html,body{
     width: 100%;
     height: 100%;
     .top-home{
-      height: 100px;
-      background-color: black;
+      position: fixed;
+      width: 100%;
+      height: 60px;
+      background-color: rgba(0, 204, 255, 1.0);
+      // background-color: #fff;
       margin-left: -15px;
       margin-right: -15px;
+      margin-top: -70px;
+      border-bottom: 1px solid #00CCFF;
+      box-shadow: 1px 0px 4px rgba(0, 204, 255, 0.8);
+      .side-open-switch{
+        font-size: 28px;
+        color: #fff;
+        // color: #00CCFF;
+        margin-left: 20px;
+        margin-top: 12px;
+        cursor: pointer;
+      }
+      .right-top-home{
+        position: absolute;
+        top: 10px;
+        right: 0px;
+        .login{
+          margin-left: 50px;
+          input{
+            margin-right: 20px;
+          }
+        }
+      }
     }
     .videos-home{
-
+      width: 100%;
+      height: auto;
+      margin-top: 70px;
     }
   }
 
